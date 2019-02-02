@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body{
+font-family: 'Pacifico', cursive;
+	font-weight: 300;
+	font-size: 15px;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+	line-height: 1.7;
+	color: #ffffff;
+	background-color: #111111;
+	overflow-x: hidden;
+}
+
+.sectiune {
+    position: relative;
+	width: 100%;
+	display: block;
+}
+.ascuns{
+	overflow: hidden;
+}
+.inaltime-completa {
+	height: 100vh;
+}
+
+.transformare {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 10;
+    transform: translateY(-50%);
+	width: 100%;
+	-webkit-transition: all 500ms linear;
+	transition: all 500ms linear; 
+	margin: 0 auto;
+	text-align: center;
+}
+.transformare h1 {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear; 
+}
+@media screen and (max-width: 580px){
+  .transformare h1 {
+    font-size: 32px;
+  }
+}
+.transformare p {
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 1;
+	color: #8167a9;
+	text-align: center;
+	margin-top: 15px;
+}
+.transformare p span {
+	position: relative;
+}
+.transformare p span:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	left: 0;
+	bottom: -4px;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear; 
+}
+.transformare p span:nth-child(2):before {
+	opacity: 0;
+}
+#switch {
+	width: 80px;
+	height: 8px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.switched {
+	border-color: #8167a9 !important;
+}
+
+body.light{
+	background-color: #fff;
+}
+body.light .cursor,
+body.light .cursor2,
+body.light .cursor3{
+	mix-blend-mode: normal;
+}
+body.light .cursor2{
+	border: 2px solid #1f2029;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+body.light .cursor2.hover{
+	background: rgba(0,0,0,0.06);
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+	border-color: transparent;
+}
+body.light .logo-wrap a {
+	color: #1f2029;
+}
+body.light .nav:before {
+	background: rgba(235, 235, 235,0.6);
+}
+body.light .nav:after {
+	background: rgba(250,250,250,1);
+}
+body.light .nav__list-item a{ 
+	color: rgba(0,0,0,0.6); 
+}
+body.light .nav__list-item a:hover{
+	color: #1f2029;
+}
+body.light .nav__list-item.active-nav a{
+	color: #1f2029;
+}
+body.light .transformare h1 {
+	color: #000;
+}
+body.light .transformare p span:nth-child(2):before {
+	opacity: 1;
+	background-color: #000;
+}
+body.light .transformare p span:nth-child(1):before {
+	opacity: 0;
+}
